@@ -1,0 +1,19 @@
+Andrew Zimolzak, 2022-03-15
+
+
+
+
+What I did for input data files:
+
+shasum *.csv > shasums.txt
+wc -l *.csv > lines.txt
+head -n 1 *.csv > headers.txt
+
+
+
+
+Example of one thing I did for SQL files, to look for possible PHI signals:
+
+perl -ne 'print if (/\d\d\d\d/ )' *.sql | less
+
+That's only one example. I did other things, excluding match on 'Dflt' etc., to have more specific views. Why Perl? Because Perl was on the Git Bash terminal, that's why.

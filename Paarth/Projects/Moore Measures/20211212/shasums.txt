@@ -1,0 +1,6 @@
+9c4112ef098fcd7a86bca65c02fcfc60ff96761b *CaP Denom.csv
+ab79df2c8eafc70b927eebed8dbe1ae5b805388f *CaP Num.csv
+807256ad273913a92b9478fbcaa923f9dcc0064a *CRC Denom.csv
+be4f8bd86a48a496022d85daccd708f5b5b95881 *CRC Num.csv
+503d8223269be51bc00cce98a64f25a880600052 *LCa Denom.csv
+6d4707cb64352a8b5e8021998899d68a36782d77 *LCa Num.csv

@@ -1,0 +1,5 @@
+==> ma_crc.csv <==
+PatientAge,PatientSex,PatientRace,StageOfCancer,EmergencyStatus,Time90,Time180,Time365,DeathStatus90,DeathStatus180,DeathStatus365
+
+==> ma_lca.csv <==
+PatientAge,PatientSex,PatientRace,StageOfCancer,EmergencyStatus,Time90,Time180,Time365,DeathStatus90,DeathStatus180,DeathStatus365

@@ -1,0 +1,17 @@
+==> CaP Denom.csv <==
+﻿DiagnosticEventDateTime,TypeOfCancer,StageOfCancer,DeathDateTime,PatientSex,PatientAge,PatientRace
+
+==> CaP Num.csv <==
+﻿DiagnosticEventDateTime,TypeOfCancer,StageOfCancer,DeathDateTime,PatientSex,PatientAge,PatientRace
+
+==> CRC Denom.csv <==
+﻿DiagnosticEventDateTime,TypeOfCancer,StageOfCancer,DeathDateTime,PatientSex,PatientAge,PatientRace
+
+==> CRC Num.csv <==
+﻿DiagnosticEventDateTime,TypeOfCancer,StageOfCancer,DeathDateTime,PatientSex,PatientAge,PatientRace
+
+==> LCa Denom.csv <==
+﻿DiagnosticEventDateTime,TypeOfCancer,StageOfCancer,DeathDateTime,PatientSex,PatientAge,PatientRace
+
+==> LCa Num.csv <==
+﻿DiagnosticEventDateTime,TypeOfCancer,StageOfCancer,DeathDateTime,PatientSex,PatientAge,PatientRace

@@ -1,0 +1,46 @@
+digraph{
+
+# Nodes
+
+cancer_dx[shape=rectangle, label="Cancer Diagnosis\n\n(n=10,000)"]
+emerg[shape=rectangle, label="Emergency care\nprior to diagnosis\n\n(n=1,000)"]
+no_emerg[shape=rectangle, label="No emergency care\nprior to diagnosis\n\n(n=9,000)", style=filled, color=grey]
+signals_related[shape=rectangle, label="Clinical signals\nrelated to cancer\n(EP-flagged records)\n\n(n=900)", style=filled, color=lightgreen]
+signals_unrelated[shape=rectangle, label="Clinical signals\nunrelated to cancer\n\n(n=100)", style=filled, color=grey]
+
+review_sample[shape=rectangle, label="Structured record\nreview for validation\n\n(n=100)"]
+chief_concern[shape=rectangle, label="Cancer signals\nrepresent chief concern\n\n(n=80)"]
+not_chief[shape=rectangle, label="Cancer signals DO NOT\nrepresent chief concern\n\n(n=20)"]
+
+dx_during_type1[shape=rectangle, label="Diagnosis during\nemergency encounter\n\n(n=10)", style=filled, color=lightgreen]
+dx_later_type2[shape=rectangle, label="Diagnosis in\nsubsequent encounter\n\n(n=70)", style=filled, color=lightgreen]
+dx_related_type3_incidental[shape=rectangle, label="Diagnosis in related\nsubsequent encounter\n\n(n=10)", style=filled, color=lightsalmon]
+dx_unrelated_nonEP_FP[shape=rectangle, label="Diagnosis in unrelated\nsubsequent encounter\n\n(n=10)", style=filled, color=grey]
+
+MOD_review[shape=rectangle, label="Structured record review of\nprior missed opportunities\n\n(n=90)"]
+yes_MOD[shape=rectangle, label="Evidence\nof MOD\n\n(n=50)", style=filled, color=lightblue]
+no_MOD[shape=rectangle, label="No evidence\nof MOD\n\n(n=40)", style=filled, color=lightpink]
+
+# Edges
+
+cancer_dx -> emerg
+cancer_dx -> no_emerg
+emerg -> signals_unrelated
+emerg -> signals_related
+
+signals_related -> review_sample
+review_sample -> chief_concern
+review_sample -> not_chief
+chief_concern -> dx_during_type1
+chief_concern -> dx_later_type2
+not_chief -> dx_related_type3_incidental
+not_chief -> dx_unrelated_nonEP_FP
+
+dx_during_type1 -> MOD_review
+dx_later_type2 -> MOD_review
+dx_related_type3_incidental -> MOD_review
+
+MOD_review -> yes_MOD
+MOD_review -> no_MOD
+
+}

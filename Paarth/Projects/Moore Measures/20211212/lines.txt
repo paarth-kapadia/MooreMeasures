@@ -1,0 +1,7 @@
+  49392 CaP Denom.csv
+   3146 CaP Num.csv
+  12901 CRC Denom.csv
+   2952 CRC Num.csv
+  31983 LCa Denom.csv
+   6873 LCa Num.csv
+ 107247 total
